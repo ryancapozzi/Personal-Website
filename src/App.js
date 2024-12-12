@@ -1,12 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const [backgroundColor, setBackgroundColor] = useState('bg-black');
+
+  function handleClick() {
+    console.log("Button clicked");
+    if (backgroundColor === 'bg-black') {
+      console.log(`Setting to ${backgroundColor}`);
+      setBackgroundColor('bg-white');
+    } else {
+      console.log(`Setting to ${backgroundColor}`);
+      setBackgroundColor('bg-black');
+    }
+  }
+
+  function BackgroundButton() {
+    return (
+      <button onClick={handleClick}>
+        Change Background Color
+      </button>
+    );
+  }
+
   return (
-    <div className="App">
+    <div className={`App ${backgroundColor}`}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p className={`text-4xl text-orange-500 font-bold`}>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -17,6 +39,7 @@ function App() {
         >
           Learn React
         </a>
+        <BackgroundButton />
       </header>
     </div>
   );
