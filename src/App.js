@@ -14,7 +14,7 @@ function App() {
         <div>
           <Typewriter text="Hello World!" className="text-6xl pr-25 font-bold text-zinc-100 drop-shadow-lg" start={true} onComplete={() => setShowSecond(true)} speed='75'/>
           {showSecond && (
-            <Typewriter text="I'm Ryan, a dedicated software engineer with a passion for web development and artificial intelligence. This project is a work in progress..." className="text-4xl pr-25 text-zinc-100 drop-shadow-lg leading-relaxed" start={true} onComplete={() => setShowBoxes(true)} speed='50' isLast={true}/>
+            <Typewriter text="I'm Ryan, a dedicated software engineer with a passion for web development and artificial intelligence. This project is a work in progress..." className="text-4xl pr-25 text-zinc-100 drop-shadow-lg leading-relaxed" start={true} onComplete={() => setShowBoxes(true)} speed='35' isLast={true}/>
           )}
         </div>
 
