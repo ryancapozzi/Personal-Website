@@ -49,8 +49,11 @@ function App() {
         )}
       </section>
 
-      <section id="about" className="h-screen flex items-center justify-center">
-        <h2 className="text-3xl font-semibold">About Me</h2>
+      <section id="about" className="h-screen flex flex-col items-center justify-center">
+        <h2 className="text-3xl font-semibold py-4">About Me</h2>
+        <div>
+          <a href="https://www.linkedin.com/in/ryan-capozzi/"className="text-xl">LinkedIn</a>
+        </div>
       </section>
       <section id="projects" className="h-screen flex items-center justify-center">
         <h2 className="text-3xl font-semibold">My Projects</h2>
