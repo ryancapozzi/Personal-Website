@@ -8,13 +8,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <section id="home" className="bg-slate-400 h-screen py-24 px-10 flex flex-col items-start">
+      <section id="home" className="bg-slate-400 h-screen py-20 px-10 flex flex-col items-start">
 
         {/*Typewriter section of home */}
         <div>
           <Typewriter text="Hello World!" className="text-6xl pr-25 font-bold text-zinc-100 drop-shadow-lg" start={true} onComplete={() => setShowSecond(true)} speed='75'/>
           {showSecond && (
-            <Typewriter text="I'm Ryan, a dedicated software engineer with a passion for web development and artificial intelligence..." className="text-4xl pr-25 text-zinc-100 drop-shadow-lg leading-relaxed" start={true} onComplete={() => setShowBoxes(true)} speed='50' isLast={true}/>
+            <Typewriter text="I'm Ryan, a dedicated software engineer with a passion for web development and artificial intelligence. This project is a work in progress..." className="text-4xl pr-25 text-zinc-100 drop-shadow-lg leading-relaxed" start={true} onComplete={() => setShowBoxes(true)} speed='50' isLast={true}/>
           )}
         </div>
 
@@ -56,7 +56,7 @@ function App() {
         <h2 className="text-3xl font-semibold">My Projects</h2>
       </section>
       <section id="experience" className="h-screen flex items-center justify-center">
-        <h2 className="text-3xl font-semibold">Résumé</h2>
+        <h2 className="text-3xl font-semibold">Experience</h2>
       </section>
     </div>
   );
